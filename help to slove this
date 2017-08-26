@@ -1,0 +1,62 @@
+I Found you in Github ... and went through your solution you provide for Orchestrator .Will be highly helpful if you get me through this in your free time .
+
+The error i get are as follows :
+
+2017-08-26 06:47:31 DEBUG outdated keys: []
+2017-08-26 06:47:32 DEBUG outdated keys: []
+[mysql] 2017/08/26 06:47:32 statement.go:27: invalid connection
+2017-08-26 06:47:32 DEBUG auditType:inject-unseen-masters instance::0 cluster: message:Operations: 0
+[mysql] 2017/08/26 06:47:32 statement.go:27: invalid connection
+2017-08-26 06:47:32 DEBUG auditType:review-unseen-instances instance::0 cluster: message:Operations: 0
+2017-08-26 06:47:32 DEBUG auditType:resolve-unknown-masters instance::0 cluster: message:Num resolved hostnames: 0
+2017-08-26 06:47:32 DEBUG auditType:forget-unseen-differently-resolved instance::0 cluster: message:Forgotten instances: 0
+2017-08-26 06:47:32 DEBUG auditType:forget-unseen instance::0 cluster: message:Forgotten instances: 0
+2017-08-26 06:47:33 DEBUG outdated keys: []
+2017-08-26 06:47:34 DEBUG outdated keys: []
+
+
+
+Mine settings are :
+
+{
+  "Debug": true,
+  "EnableSyslog": false,
+  "ListenAddress": ":3000",
+  "MySQLTopologyUser": "orchestrator",
+  "MySQLTopologyPassword": "Ash14rgfHM",
+  "MySQLTopologyCredentialsConfigFile": "",
+  "MySQLTopologySSLPrivateKeyFile": "",
+  "MySQLTopologySSLCertFile": "",
+  "MySQLTopologySSLCAFile": "",
+  "MySQLTopologySSLSkipVerify": true,
+  "MySQLTopologyUseMutualTLS": false,
+  "MySQLTopologyMaxPoolConnections": 3,
+  "DatabaselessMode__experimental": false,
+  "MySQLOrchestratorHost": "192.168.123.28",
+  "MySQLOrchestratorPort": 3306,
+  "MySQLOrchestratorDatabase": "orchestrator",
+  "MySQLOrchestratorUser": "orchestrator",
+  "MySQLOrchestratorPassword": "Ash14rgfHM",
+  "MySQLOrchestratorCredentialsConfigFile": "",
+  "MySQLOrchestratorSSLPrivateKeyFile": "",
+  "MySQLOrchestratorSSLCertFile": "",
+  "MySQLOrchestratorSSLCAFile": "",
+  "MySQLOrchestratorSSLSkipVerify": true,
+  "MySQLOrchestratorUseMutualTLS": false,
+  "MySQLConnectTimeoutSeconds": 1,
+  "DefaultInstancePort": 3306,
+  "SlaveStartPostWaitMilliseconds": 1000,
+  "DiscoverByShowSlaveHosts": true,
+  "InstancePollSeconds": 5,
+  "ReadLongRunningQueries": true,
+  "UnseenInstanceForgetHours": 240,
+  "SnapshotTopologiesIntervalHours": 0,
+  "InstanceBulkOperationsWaitTimeoutSeconds": 10,
+  "ActiveNodeExpireSeconds": 5,
+  "HostnameResolveMethod": "none",
+  "MySQLHostnameResolveMethod": "@@hostname",
+  "SkipBinlogServerUnresolveCheck": true,
+  "ExpiryHostnameResolvesMinutes": 60,
+  "RejectHostnameResolvePattern": "",
+  "ReasonableReplicationLagSeconds": 10,
+  "ProblemIgnoreHostnameFilters": [],
